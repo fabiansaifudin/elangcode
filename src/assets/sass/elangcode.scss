@@ -1,0 +1,56 @@
+/*!
+
+=========================================================
+* Now UI Kit Angular - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/now-ui-kit-angular
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-angular/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+@import 'elangcode/variables';
+@import 'elangcode/mixins';
+
+// Plugins CSS
+@import "elangcode/plugins/plugin-bootstrap-switch";
+@import "elangcode/plugins/plugin-nouislider";
+@import "elangcode/plugins/plugin-datepicker";
+
+// Core CSS
+@import "elangcode/buttons";
+@import "elangcode/inputs";
+@import "elangcode/checkboxes-radio";
+@import "elangcode/progress";
+@import "elangcode/badges";
+@import "elangcode/pagination";
+@import "elangcode/typography";
+@import "elangcode/misc";
+@import "elangcode/pills";
+
+// components
+@import "elangcode/social-buttons";
+@import "elangcode/tabs";
+@import "elangcode/navbar";
+@import "elangcode/dropdown";
+@import "elangcode/alerts";
+@import "elangcode/images";
+@import "elangcode/popups";
+@import "elangcode/nucleo-outline";
+@import "elangcode/modals";
+@import "elangcode/carousel";
+@import "elangcode/cards";
+@import "elangcode/footers";
+
+// example pages and sections
+@import "elangcode/example-pages";
+@import "elangcode/sections";
+
+
+@import "elangcode/responsive";

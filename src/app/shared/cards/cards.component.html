@@ -1,0 +1,132 @@
+<div class="section section-basic" style="padding: 100px 0px;">
+    <div class="container">
+        <div *ngIf="platform != null; then targetBenar else targetSalah"></div>
+        <ng-template #targetBenar>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-transparent">
+                            <h3 class="card-text">Target Platform {{judul}}</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Daftar Materiuntuk platform {{judul}}</p>
+                            <h5>Frontend Development</h5>
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>Angular</li>
+                                <li>ReactJS</li>
+                                <li>VueJS</li>
+                                <li>JQuery</li>
+                            </ul>
+                            <h5>Backend Development</h5>
+                            <ul>
+                                <li>
+                                    <a href="/baca?judul=nodejs">NodeJS/ExpressJS</a>
+                                </li>
+                                <li>
+                                    <a href="/baca?judul=php">PHP</a>
+                                </li>
+                                <li>
+                                    <a href="/baca?judul=laravel">Laravel</a>
+                                </li>
+                                <li>Codeigniter</li>
+                                <li>Ts.Ed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template #targetSalah>
+            <div class="row">
+                <div *ngIf="page == null || page == '1'; then pageTrue else pageFalse">Kondisi page</div>
+                <ng-template #pageTrue>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header bg-transparent"><h3 class="card-text">Tutorial {{judul}} Dasar Untuk Pemula Part 1</h3></div>
+                            <div class="card-body">
+                                <h5 class="title">Sejarah {{judul}}</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem semper amet amet adipiscing. Porta dictumst tempus ipsum, nisl tellus porttitor. Lectus porttitor id semper tristique. Scelerisque facilisi.</p>
+                                <h5 class="title">Apa itu {{judul}}?</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nam sed a ultricies pretium. Pulvinar erat neque, odio lacus sollicitudin. Sed dictum egestas condimentum velit vitae amet pretium. Porta ac elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="title pl-2">Materi Pembelajaran</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '1'}">Tutorial html Untuk Pemula Part 1</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '2'}">Tutorial html Untuk Pemula Part 2</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '3'}">Tutorial html Untuk Pemula Part 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="title pl-2">Web Frontend Developer</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html'}">Belajar HTML</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'css'}">Belajar CSS</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'js'}">Belajar JavaScript</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <span class="title pl-2">Web Backend Developer</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'php'}">Belajar PHP</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'nodejs'}">Belajar NodeJS</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'laravel'}">Belajar Laravel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template #pageFalse>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header bg-transparent"><h3 class="card-text">Tutorial html Dasar Untuk Pemula Part {{page}}</h3></div>
+                            <div class="card-body">
+                                <h5 class="title">Sejarah {{judul}}</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem semper amet amet adipiscing. Porta dictumst tempus ipsum, nisl tellus porttitor. Lectus porttitor id semper tristique. Scelerisque facilisi.</p>
+                                <h5 class="title">Apa itu {{judul}}?</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nam sed a ultricies pretium. Pulvinar erat neque, odio lacus sollicitudin. Sed dictum egestas condimentum velit vitae amet pretium. Porta ac elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="title pl-2">Materi Pembelajaran</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '1'}">Tutorial html Untuk Pemula Part 1</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '2'}">Tutorial html Untuk Pemula Part 2</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html', 'page': '3'}">Tutorial html Untuk Pemula Part 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="title pl-2">Web Frontend Developer</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'html'}">Belajar HTML</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'css'}">Belajar CSS</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'js'}">Belajar JavaScript</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <span class="title pl-2">Web Backend Developer</span>
+                                <ul class="list-group py-2" style="font-size: small;">
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'php'}">Belajar PHP</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'nodejs'}">Belajar NodeJS</a></li>
+                                    <li class="list-group-item bg-transparent border-0 py-1"><a [routerLink]="['/baca']" [queryParams]="{'judul': 'laravel'}">Belajar Laravel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+        </ng-template>
+    </div>
+</div>

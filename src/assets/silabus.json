@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "judul": "HTML",
+        "code": "html",
+        "deskripsi": "HyperText Markup Language atau HTML adalah bahasa markup standar untuk ditampilkan di browser web",
+        "silabus": [
+            {"id": 1,"materi": "<h5 class=title>Sejarah HTML</h5><p>Pada tahun 1980, fisikawan Tim Berners-Lee, seorang kontraktor di CERN, mengusulkan dan membuat prototipe ENQUIRE, sebuah sistem bagi peneliti CERN untuk menggunakan dan berbagi dokumen. Pada tahun 1989, Berners-Lee menulis memo yang mengusulkan sistem hypertext berbasis Internet. Berners-Lee menetapkan HTML dan menulis perangkat lunak browser dan server pada akhir tahun 1990. Tahun itu, Berners-Lee dan insinyur sistem data CERN Robert Cailliau berkolaborasi dalam permintaan bersama untuk pendanaan, tetapi proyek tersebut tidak diadopsi secara resmi oleh CERN. Dalam catatan pribadinya dari tahun 1990 dia mendaftar “beberapa dari banyak area di mana hypertext digunakan” dan letakkan ensiklopedia terlebih dahulu</p><h5 class=title>Apa itu HTML?</h5><p>HyperText Markup Language atau HTML adalah bahasa markup standar untuk dokumen yang dirancang untuk ditampilkan di browser web. Hal ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa scripting seperti JavaScript. Browser web menerima dokumen HTML dari server web atau dari penyimpanan lokal dan merender dokumen ke halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan awalnya menyertakan isyarat untuk tampilan dokumen</p>"},
+            {"id": 2,"materi": "<h5 class=title>Comming soon</h5>"},
+            {"id": 3,"materi": "<h5 class=title>Comming soon</h5>"}
+        ],
+        "image": "assets/img/html5.png"
+    },
+    {
+        "id": 2,
+        "judul": "CSS",
+        "code": "css",
+        "deskripsi": "Cascading Style Sheets (CSS) adalah bahasa style sheet",
+        "silabus": [
+            {"id": 1,"materi": "<h5 class=title>Sejarah CSS</h5><p>CSS pertama kali diusulkan oleh Håkon Wium Lie pada 10 Oktober 1994 Pada saat itu, Lie sedang bekerja dengan Tim Berners-Lee di CERN Beberapa bahasa style sheet lain untuk web diusulkan pada waktu yang hampir bersamaan, dan diskusi di milis publik dan di dalam World Wide Web Consortium menghasilkan Rekomendasi W3C CSS (CSS1) pertama. dirilis pada tahun 1996. Secara khusus, proposal Bert Bos sangat berpengaruh; ia menjadi co-penulis CSS1, dan dianggap sebagai co-pencipta CSS</p><h5 class=title>Apa itu CSS?</h5><p>Cascading Style Sheets (CSS) adalah bahasa style sheet yang digunakan untuk menggambarkan presentasi dokumen yang ditulis dalam bahasa markup seperti HTML. CSS adalah teknologi landasan World Wide Web, di samping HTML dan JavaScript</p><p>CSS dirancang untuk memungkinkan pemisahan presentasi dan konten, termasuk tata letak, warna, dan font. Pemisahan ini dapat meningkatkan aksesibilitas konten; memberikan lebih banyak fleksibilitas dan kontrol dalam spesifikasi karakteristik presentasi; memungkinkan beberapa halaman web untuk berbagi pemformatan dengan menentukan CSS yang relevan dalam file .css terpisah, yang mengurangi kerumitan dan pengulangan dalam konten struktural; dan aktifkan file .css untuk di-cache untuk meningkatkan kecepatan pemuatan halaman antara halaman yang berbagi file dan pemformatannya.</p>"},
+            {"id": 2,"materi": "<h5 class=title>Comming soon</h5>"},
+            {"id": 3,"materi": "<h5 class=title>Comming soon</h5>"}
+        ],
+        "image": "assets/img/css3-alt.png"
+    },
+    {
+        "id": 3,
+        "judul": "JavaScript",
+        "code": "js",
+        "deskripsi": "JavaScript adalah bahasa pemrograman yang merupakan salah satu teknologi inti dari World Wide Web",
+        "silabus": [
+            {"id": 1,"materi": "<h5 class=title>Sejarah CSS</h5><h6 class=title>Pembuatan di Netscape</h6><p>Peramban web pertama dengan antarmuka pengguna grafis, Mosaic, dirilis pada 1993. Dapat diakses oleh orang-orang non-teknis, ia memainkan peran penting dalam pertumbuhan pesat World Wide Web yang baru lahir.[15] Pengembang utama Mosaic kemudian mendirikan perusahaan Netscape, yang merilis browser yang lebih halus, Netscape Navigator, pada tahun 1994. Ini dengan cepat menjadi browser yang paling banyak digunakan.</p><h5 class=title>Apa itu JavaScript?</h5><p>JavaScript sering disingkat JS, adalah bahasa pemrograman yang merupakan salah satu teknologi inti dari World Wide Web, di samping HTML dan CSS. Lebih dari 97% situs web menggunakan JavaScript di sisi klien untuk perilaku halaman web, sering kali menggabungkan perpustakaan pihak ketiga. Semua browser web utama memiliki mesin JavaScript khusus untuk mengeksekusi kode pada perangkat pengguna.</p>"},
+            {"id": 2,"materi": "<h5 class=title>Comming soon</h5>"},
+            {"id": 3,"materi": "<h5 class=title>Comming soon</h5>"}
+        ],
+        "image": "assets/img/js.png"
+    }
+]
